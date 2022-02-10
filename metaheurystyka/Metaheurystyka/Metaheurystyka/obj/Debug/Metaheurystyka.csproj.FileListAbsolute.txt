@@ -1,0 +1,10 @@
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\bin\Debug\Metaheurystyka.exe.config
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\bin\Debug\Metaheurystyka.exe
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\bin\Debug\Metaheurystyka.pdb
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.csproj.AssemblyReference.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.Form1.resources
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.Properties.Resources.resources
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.csproj.GenerateResource.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.csproj.CoreCompileInputs.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.exe
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\metaheurystyka\Metaheurystyka\Metaheurystyka\obj\Debug\Metaheurystyka.pdb

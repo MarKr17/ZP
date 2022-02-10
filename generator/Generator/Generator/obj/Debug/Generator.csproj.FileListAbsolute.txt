@@ -1,0 +1,10 @@
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\bin\Debug\Generator.exe.config
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\bin\Debug\Generator.exe
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\bin\Debug\Generator.pdb
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.csproj.AssemblyReference.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.Form1.resources
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.Properties.Resources.resources
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.csproj.GenerateResource.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.csproj.CoreCompileInputs.cache
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.exe
+C:\Users\Marysia\Documents\II stopien\I semestr\ZP\generator\Generator\Generator\obj\Debug\Generator.pdb
