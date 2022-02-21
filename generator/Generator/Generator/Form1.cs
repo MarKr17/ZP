@@ -52,7 +52,7 @@ namespace Generator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Saver.Zapisz_wszystkie(instancje, textBox_nazwa.Text);
+            Saver.Zapisz_wszystkie(instancje, textBox_nazwa.Text, textBoxFolder.Text);
         }
     }
 }

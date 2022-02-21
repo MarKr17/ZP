@@ -49,6 +49,8 @@ namespace Generator
             this.button2 = new System.Windows.Forms.Button();
             this.textBox_nazwa = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxFolder = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxK
@@ -57,6 +59,7 @@ namespace Generator
             this.textBoxK.Name = "textBoxK";
             this.textBoxK.Size = new System.Drawing.Size(125, 26);
             this.textBoxK.TabIndex = 0;
+            this.textBoxK.Text = "5";
             // 
             // label1
             // 
@@ -92,6 +95,7 @@ namespace Generator
             this.textBoxD.Name = "textBoxD";
             this.textBoxD.Size = new System.Drawing.Size(100, 26);
             this.textBoxD.TabIndex = 4;
+            this.textBoxD.Text = "10";
             // 
             // textBoxM
             // 
@@ -99,6 +103,7 @@ namespace Generator
             this.textBoxM.Name = "textBoxM";
             this.textBoxM.Size = new System.Drawing.Size(100, 26);
             this.textBoxM.TabIndex = 5;
+            this.textBoxM.Text = "20";
             // 
             // label3
             // 
@@ -163,6 +168,7 @@ namespace Generator
             this.textBoxMis.Name = "textBoxMis";
             this.textBoxMis.Size = new System.Drawing.Size(100, 26);
             this.textBoxMis.TabIndex = 13;
+            this.textBoxMis.Text = "1";
             // 
             // label7
             // 
@@ -188,6 +194,7 @@ namespace Generator
             this.textBoxIle.Name = "textBoxIle";
             this.textBoxIle.Size = new System.Drawing.Size(100, 26);
             this.textBoxIle.TabIndex = 16;
+            this.textBoxIle.Text = "1";
             // 
             // button2
             // 
@@ -215,11 +222,29 @@ namespace Generator
             this.label9.TabIndex = 19;
             this.label9.Text = "Nazwa Pilku";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(293, 303);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 20);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Folder";
+            // 
+            // textBoxFolder
+            // 
+            this.textBoxFolder.Location = new System.Drawing.Point(297, 326);
+            this.textBoxFolder.Name = "textBoxFolder";
+            this.textBoxFolder.Size = new System.Drawing.Size(216, 26);
+            this.textBoxFolder.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 450);
+            this.Controls.Add(this.textBoxFolder);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox_nazwa);
             this.Controls.Add(this.button2);
@@ -269,6 +294,8 @@ namespace Generator
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox_nazwa;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxFolder;
     }
 }
 

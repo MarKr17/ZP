@@ -130,20 +130,26 @@ namespace Generator
     }
     public static class Saver
     {
-        public static void Zapisz_wszystkie(Instancje instancje, string nazwa)
+        public static void Zapisz_wszystkie(Instancje instancje, string nazwa, string folder)
         {
             for(int i=0; i<instancje.Instancje_lista.Count(); i++)
             {
-                Zapisz_instancje(instancje.Instancje_lista[i], i, nazwa);
+                Zapisz_instancje(instancje.Instancje_lista[i], i, nazwa, folder);
             }
         }
-        public static void Zapisz_instancje(Instancja instancja, int id, string nazwa)
+        public static void Zapisz_instancje(Instancja instancja, int id, string nazwa, string folder)
         {
             string path = Directory.GetCurrentDirectory();
             string substr = "generator";
             int index = path.IndexOf(substr);
             path = path.Substring(0, index);
             path += "Instancje\\";
+            if (folder != "")
+            {
+                
+                path +=folder+"\\";
+                Directory.CreateDirectory(path);
+            }
             path += nazwa + id.ToString();
             path+=".txt";
 
