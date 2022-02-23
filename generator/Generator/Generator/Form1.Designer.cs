@@ -32,8 +32,6 @@ namespace Generator
             this.textBoxK = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxD = new System.Windows.Forms.TextBox();
             this.textBoxM = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,23 +77,6 @@ namespace Generator
             this.button1.Text = "Generuj";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Rozmiar instancji";
-            // 
-            // textBoxD
-            // 
-            this.textBoxD.Location = new System.Drawing.Point(32, 145);
-            this.textBoxD.Name = "textBoxD";
-            this.textBoxD.Size = new System.Drawing.Size(100, 26);
-            this.textBoxD.TabIndex = 4;
-            this.textBoxD.Text = "10";
             // 
             // textBoxM
             // 
@@ -164,7 +145,7 @@ namespace Generator
             // 
             // textBoxMis
             // 
-            this.textBoxMis.Location = new System.Drawing.Point(293, 145);
+            this.textBoxMis.Location = new System.Drawing.Point(623, 78);
             this.textBoxMis.Name = "textBoxMis";
             this.textBoxMis.Size = new System.Drawing.Size(100, 26);
             this.textBoxMis.TabIndex = 13;
@@ -173,7 +154,7 @@ namespace Generator
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(290, 122);
+            this.label7.Location = new System.Drawing.Point(620, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 20);
             this.label7.TabIndex = 14;
@@ -260,8 +241,6 @@ namespace Generator
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxM);
-            this.Controls.Add(this.textBoxD);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxK);
@@ -277,8 +256,6 @@ namespace Generator
         private System.Windows.Forms.TextBox textBoxK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxD;
         private System.Windows.Forms.TextBox textBoxM;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

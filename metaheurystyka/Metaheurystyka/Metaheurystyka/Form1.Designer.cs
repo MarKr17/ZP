@@ -65,6 +65,10 @@ namespace Metaheurystyka
             this.label9 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.tabTesty = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -74,10 +78,6 @@ namespace Metaheurystyka
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label18 = new System.Windows.Forms.Label();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -448,6 +448,39 @@ namespace Metaheurystyka
             this.tabTesty.Text = "Testy";
             this.tabTesty.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(390, 211);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(60, 20);
+            this.label18.TabIndex = 22;
+            this.label18.Text = "label18";
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(384, 242);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(569, 37);
+            this.progressBar2.TabIndex = 21;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(10, 231);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(149, 20);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "Folder z instancjami";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(14, 263);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 26);
+            this.textBox7.TabIndex = 19;
+            this.textBox7.Text = "Instancje";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -525,38 +558,6 @@ namespace Metaheurystyka
             this.textBox6.Size = new System.Drawing.Size(100, 26);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "20";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(10, 231);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(149, 20);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "Folder z instancjami";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(14, 263);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 26);
-            this.textBox7.TabIndex = 19;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(384, 242);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(569, 37);
-            this.progressBar2.TabIndex = 21;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(390, 211);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 20);
-            this.label18.TabIndex = 22;
-            this.label18.Text = "label18";
             // 
             // backgroundWorker2
             // 
