@@ -44,7 +44,7 @@ namespace Generator
             instancje = new Instancje(k, m, b, ile);
 
             textBoxMR.Text = string.Join(",", instancje.Instancje_lista[0].P.ToArray());
-            textBoxD.Text = instancje.size_D.ToString();
+            //textBoxD.Text = instancje.size_D.ToString();
             textBoxIns.Text= string.Join(",", instancje.Instancje_lista[0].D.ToArray());
 
             textBoxBledy.Text= string.Join(",", instancje.Instancje_lista[0].D_mis.ToArray());

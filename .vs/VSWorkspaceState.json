@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\generator",
+    "\\generator\\Generator",
+    "\\generator\\Generator\\Generator",
     "\\metaheurystyka",
     "\\metaheurystyka\\Metaheurystyka",
     "\\metaheurystyka\\Metaheurystyka\\Metaheurystyka"
   ],
-  "SelectedNode": "\\metaheurystyka\\Metaheurystyka\\Metaheurystyka\\Form1.cs",
+  "SelectedNode": "\\generator\\Generator\\Generator\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -34,7 +34,15 @@ namespace Metaheurystyka
             for(int i=Global.instancja.iteracja; i<Global.instancja.iteracje_max; i++)
             {
                 if (backgroundWorker1.CancellationPending) break;
-                Global.instancja.Obliczanie();
+                try
+                {
+                    Global.instancja.Obliczanie();
+                }
+                catch
+                {
+                    break;
+                }
+               
                 backgroundWorker1.ReportProgress(0);
             }
         }
@@ -166,35 +174,58 @@ namespace Metaheurystyka
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            Test test = new Test(Int32.Parse(textBox6.Text), Int32.Parse(textBox4.Text),
-                Double.Parse(textBox3.Text), Double.Parse(textBox5.Text),textBox7.Text);
-
-            string path = Directory.GetCurrentDirectory();
-            string substr = "metaheurystyka";
-            int index = path.IndexOf(substr);
-            path = path.Substring(0, index);
-            path += textBox7.Text+"\\";
-            string[] dirs = Directory.GetDirectories(path);
-            Global.dirs = dirs;
-
-            label18.Text = "Instancja 0 z "+(dirs.Count()*10).ToString();
-            //test.Obliczenia();
-
-            if(!backgroundWorker2.IsBusy)
+            if (textBox7.Text != "")
             {
-                backgroundWorker2.RunWorkerAsync();
+                
+                try
+                {
+                    string path = Directory.GetCurrentDirectory();
+                    string substr = "metaheurystyka";
+                    int index = path.IndexOf(substr);
+                    path = path.Substring(0, index);
+                    path += textBox7.Text + "\\";
+                    string[] dirs = Directory.GetDirectories(path);
+                    Global.dirs = dirs;
 
-                progressBar2.Maximum = dirs.Count() * 10;
+                    label18.Text = "Instancja 0 z " + (dirs.Count() * 10).ToString();
+                    //test.Obliczenia();
+
+                    if (!backgroundWorker2.IsBusy)
+                    {
+                        
+                        backgroundWorker2.RunWorkerAsync();
+
+                        progressBar2.Maximum = dirs.Count() * 10;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Nieprawidłowa nazwa folderu");
+                }
             }
-
-            
-
         }
 
         public void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
-            foreach(string d in Global.dirs)
+            
+
+            string folder_w = "p" + textBox6.Text +
+                "_i" + textBox4.Text +
+                "_m" + textBox3.Text + "_c"
+                + textBox5.Text;
+            string path = Directory.GetCurrentDirectory();
+            string substr = "metaheurystyka";
+            int index = path.IndexOf(substr);
+            path = path.Substring(0, index);
+            path += "Wyniki\\";
+            path += folder_w + "\\";
+            Directory.CreateDirectory(path);
+            path += textBox7.Text;
+            path += ".txt";
+
+            TextWriter tw = new StreamWriter(path);
+            
+            foreach (string d in Global.dirs)
             {
                 string[] files = Directory.GetFiles(d);
                 string name = d;
@@ -216,7 +247,14 @@ namespace Metaheurystyka
                     ins.populacja.Gen_pierwsza(ins);
                     for (int j = 0; j < test.iteracje; j++)
                     {
-                        ins.Obliczanie();
+                        try
+                        {
+                            ins.Obliczanie();
+                        }
+                        catch
+                        {
+                            break;
+                        }
                     }
                     wynik += ins.Najlepsze.fitnes;
                     czas += ins.czas;
@@ -225,25 +263,31 @@ namespace Metaheurystyka
                 test.wyniki.Add(wynik / 10);
                 test.czasy.Add(czas / 10);
 
-                test.Zapisywanie();
-
-                
+                tw.WriteLine(test.folder+
+                    "\t"+test.wyniki[0].ToString()+
+                    "\t"+ test.czasy[0].ToString());
+               
             }
+            tw.Close();
+            //e.Result = 0;
+            //backgroundWorker2.ReportProgress(0);
 
-            backgroundWorker2.CancelAsync();
         }
 
         private void backgroundWorker2_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             
-            progressBar2.Value +=1;
+            if(progressBar2.Value!=progressBar2.Maximum) progressBar2.Value +=1;
             label18.Text = "Instancja "+progressBar2.Value.ToString()+" z " + (Global.dirs.Count() * 10).ToString();
         }
 
         private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            //progressBar2.Value = 0;
+            progressBar2.Value = 0;
             MessageBox.Show("Zakończono obliczenia");
+            
+           
+
         }
     }
 }
